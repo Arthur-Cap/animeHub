@@ -1,0 +1,205 @@
+
+:root{
+    --main-color : #2bffdf;
+    --goc : 10px;
+    --phu : white;
+    --them-color:aqua;
+}
+html{  background-image: linear-gradient(to top, #02140b,#040422);
+
+width: 100%;
+height: 100vh;}
+body {
+  
+    display: flex;
+  flex-direction: column;
+  height: 100%;
+  font-family: 'Century Gothic', sans-serif;
+  overflow: hidden;
+}
+    
+
+.AnimeList {
+    padding-left: 5%;
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 6% 0 ;
+    
+  }
+#anime1{
+  background: linear-gradient(to left, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 1)), url(Re.jpg);
+  background-position: 154px ;
+  background-size: auto 200px;
+  background-repeat: no-repeat;
+}
+
+#anime2{
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)), url(Chains.webp);
+    background-position: 124px -10px ;
+    background-size: auto 230px;
+    background-repeat: no-repeat;
+}
+
+#anime3{
+    background: linear-gradient(to left, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 1)), url(Tokyo.jpg);
+    background-position: 154px ;
+    background-size: auto 200px;
+    background-repeat: no-repeat;
+  }
+
+.anime{
+    position: relative;
+    margin-top: 50px;
+    width: 500px;
+    height: 120px;
+    box-shadow: inset;
+    border-bottom: 5px solid var(--main-color);
+    border-radius: var(--goc);
+    box-shadow: 0px 3px 15px 1px rgb(38, 240, 251);
+    transition: all 1s ease;
+}
+
+.anime:hover{
+    height: 200px;
+    width: 700px;
+    border-bottom: 8px solid rgb(255, 83, 61);
+
+}
+.anime:hover span{
+    height: 100px;
+
+}
+#anime1:hover{
+    background-position: 330px ;
+    background-size: auto 210px;
+    background-repeat: no-repeat;
+    box-shadow: 0px 5px 30px rgb(251, 38, 38);
+}
+#anime2:hover{
+    background-position: 250px 0px ;
+    background-size: auto 240px;
+    background-repeat: no-repeat;
+    box-shadow: 0px 5px 30px rgb(251, 38, 38);
+}
+#anime3:hover{
+    background-position: 280px ;
+    background-size: auto 240px;
+    background-repeat: no-repeat;
+    box-shadow: 0px 5px 30px rgb(251, 38, 38);
+}
+.Anime-Name{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin : 10px 0 0 10px;
+}
+p{  
+    position: absolute;
+    width: 40%;
+    color: rgb(122, 119, 119);
+    font-size: 9px;
+    bottom: 10px;
+    border: 0.1px solid #000000;
+    padding: 5px;
+}
+span{  
+    position: absolute;
+    bottom: 5px;
+    width: 50%;
+    height: 0%;
+    color: rgb(122, 119, 119);
+    font-size: 13px;
+    white-space: wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+h3{
+    width: 50%;
+    margin: 5px 0 10px 0;
+    border-bottom: 1px solid #000000;
+}
+.box{
+    position: absolute;
+    background-color: #ffffff;
+    width: 90%;
+    height: 100%;
+    z-index: -1;
+    border-top-left-radius: var(--goc);
+   
+}
+.main-text{
+    margin-left: 2%;
+    padding-left: 8%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 50vh;
+    border-left: 1px solid #ffffff;
+
+}
+.main-title{
+    margin-left: 0;
+    color: #ff2e2e;
+    font-size: 130px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.top-text{
+    
+    font-size: 10px;
+    position: absolute;
+    top : 10px;
+    display: flex;
+    color: #3df8ef;
+    
+
+}
+.choice-top{
+    padding-bottom: 5px;
+    border-bottom:1px solid var(--them-color);
+    transition: all 0.25s ease;
+}
+.choice-top+.choice-top{
+    margin-left: 100px;
+}
+.choice-top:hover{
+    font-size: 25px;
+    color: #ff2e2e;
+    border-bottom:6px solid #ff2e2e;
+}
+.button-title{
+    margin-left: 8px;
+    color: var(--them-color);
+    border: 1px solid var(--them-color);  ;
+    padding: 10px;
+    font-size: 12px;
+}
+.mid-web{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0;
+    font-family: 'Century Gothic', sans-serif;
+}
+#button1{
+    max-width: 75px;
+}
+#button2{
+    max-width: 208px;
+}
+.top-web{
+    width: 100%;
+    
+    margin-top: 3%;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+
+
+}
